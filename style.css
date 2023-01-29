@@ -9,6 +9,189 @@ body{
 
     /* background-color: antiquewhite; */
 }
+/*animated images section ===========================>*/
+
+.animated-images{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    overflow: hidden;
+    /* border:1px solid green; */
+    justify-content: space-evenly;
+}
+
+
+
+/*image 1*/
+.image-box{
+    width:47%;
+    /* border:1px solid black; */
+    /* margin:50px auto; */
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    }
+    
+    .image-box>img{
+        width:100%;
+        height:auto;
+        object-fit: cover;
+        /* overflow: hidden; */
+        transition: 0.5s;
+    }
+    
+    :hover>.animation-image-1{
+        scale: 1.2;
+    }
+    
+    .content{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        line-height: 35px;
+        font-size: x-large;
+        background:transparent;
+        /* background-color:rgba(0,0,0,0.2); */
+        color:white;
+        position: absolute;
+        top:0;
+        left:0;
+        height:100%;
+        width:100%;
+        transition:all 0.3s;
+        padding:20px 20px;
+    }
+    
+    .image-box>.button{
+        position: absolute;
+        bottom:20px;
+        right:10px;
+        /* overflow: hidden; */
+    }
+    
+    .image-box>.button>a{
+        color:transparent;
+        text-decoration: none;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 12px;
+        background-color:transparent;
+        display: block;
+        margin:15px;
+        /* width:100%; */
+        /* height:100%; */
+        padding:10px 30px;
+        transition: 0.5s;
+    }
+    
+    :hover>.button>a{
+        background-color: #23527c;
+        border:1px solid #bebebe;
+        color:white;
+    }
+    :hover>.button>a:last-child{
+        background-color: #69b342;
+    }
+    
+    .tax-price-info{
+        background: linear-gradient(135deg, #12084d 1%, #3567b7 41%, #3a9ecf 99%, 
+        #207cca 99%);
+        color:white;
+        padding:10px 15px;
+        position:absolute;
+        bottom:30px;
+        z-index: 0;
+        transition: 0.5s;
+        width:100%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    :hover>.tax-price-info{
+        font-size: large;
+    }
+/*end image 1*/
+
+/*IMAGE ===========>2<====================*/
+.image-box-2{
+    width: 47%;
+    /* border:2px solid black; */
+    /* margin:0 auto; */
+    position:relative;
+    /* min-height:100vh; */
+    overflow:hidden;
+}
+
+.image-box-2>img{
+    width:100%;
+    height:auto;
+    transition:all 0.5s;
+}
+.image-box-2>.content-2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* background-color: lightblue; */
+    position: absolute;
+    top:10px;
+    left:6%;
+    color:#fff;
+    /* position:relative; */
+    line-height:30px;
+}
+.image-box-2>.content-2>h2{
+    font-size: xx-large;
+    /* color:black; */
+}
+.image-box-2>.content-2>p{
+    font-size: xx-large;
+    line-height:45px;
+}
+.tax-price-info-2{
+        background: linear-gradient(135deg, #12084d 1%, #3567b7 41%, #3a9ecf 99%, 
+        #207cca 99%);
+        color:white;
+        position: absolute;
+        bottom:35px;
+        left:0px;
+        box-sizing: border-box;
+        font-size: 22px;
+        padding:10px 15px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        width:100%;
+        transition:0.5s;
+}
+:hover>.animation-image-2{
+    scale:1.2;
+}
+
+:hover>.tax-price-info-2{
+    font-size: 25px;
+}
+
+.button-2>a{
+    color:transparent;
+    background:transparent;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding:10px 25px;
+    text-decoration:none;
+    display: block;
+    font-size: 11px;
+    margin-top:10px;
+}
+
+.button-2{
+    position:absolute;
+    bottom:13%;
+    right:3%;
+}
+:hover>.button-2>a{
+    background-color: #23527C;
+    color:white;
+    border:1px solid white;
+}
+:hover>.button-2>a:nth-child(2){
+    background-color: #69B342;
+}
+
+
+/* END IMAGE ===========>2<====================*/
+
+
+
 
 /*======================>ALL Deals Section<=====================*/
 select{
@@ -93,11 +276,15 @@ h5{
 
 /*====>hero banner section<===*/
 .main-container{
-    width:100%;
+    width:1200px;
     /* border:3px solid red; */
     margin:0 auto;
 }
 /*=====><======*/
+.hero-section{
+    width:100%;
+    /* border:5px solid black; */
+}
 .hero-section>img{
     width: 100%;
 }
@@ -123,7 +310,7 @@ h5{
 .last-flight-deals>h1{
     padding: 40px 40px;
 }
-.animated-images>img{
+/* .animated-images>img{
     width:47%;
     margin-top: 10px;
 }
@@ -131,7 +318,7 @@ h5{
     justify-content: space-evenly;
     display: flex;
     flex-wrap:wrap ;
-}
+} */
 
 /*==============>value added services section/<===================*/
 .value-added-services>h1{
@@ -151,6 +338,11 @@ h5{
 .footer-col1>h5,.footer-col2>h5,.footer-col3>h5,.footer-col4>h5{
     padding:20px 0px;   
 }
+
+.footer-col1>p,.footer-col2>p,.footer-col3>p,.footer-col4>p{
+    cursor: pointer;
+}
+
 .footer{
     padding:40px 5px;
     display: flex;
@@ -163,8 +355,201 @@ h5{
     #padding-main{
         padding:15px;
     }
+
+    .animated-images{
+        width: 100%;
+        box-sizing: border-box;
+        flex-direction: column;
+        /* justify-content: center; */
+    }
+
+
+    /*image 1*/
+.image-box{
+    width:100%;
+    /* border:1px solid black; */
+    margin:0px;
+    margin-bottom: 20px;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    }
+    
+    .image-box>img{
+        width:100%;
+        height:auto;
+        object-fit: cover;
+        /* overflow: hidden; */
+        transition: 0.5s;
+    }
+    
+    :hover>.animation-image-1{
+        scale: 1.2;
+    }
+    
+    .content{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        line-height: 35px;
+        font-size: x-large;
+        background:transparent;
+        /* background-color:rgba(0,0,0,0.2); */
+        color:white;
+        position: absolute;
+        top:0;
+        left:0;
+        height:100%;
+        width:100%;
+        transition:all 0.3s;
+        padding:20px 20px;
+    }
+    
+    .image-box>.button{
+        position: absolute;
+        bottom:20px;
+        right:10px;
+        /* overflow: hidden; */
+    }
+    
+    .image-box>.button>a{
+        color:transparent;
+        text-decoration: none;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 12px;
+        background-color:transparent;
+        display: block;
+        margin:15px;
+        /* width:100%; */
+        /* height:100%; */
+        padding:7px 20px;
+        transition: 0.5s;
+    }
+    
+    :hover>.button>a{
+        background-color: #23527c;
+        border:1px solid #bebebe;
+        color:white;
+    }
+    :hover>.button>a:last-child{
+        background-color: #69b342;
+    }
+    
+    .tax-price-info{
+        background: linear-gradient(135deg, #12084d 1%, #3567b7 41%, #3a9ecf 99%, 
+        #207cca 99%);
+        color:white;
+        padding:10px 15px;
+        position:absolute;
+        bottom:30px;
+        z-index: 0;
+        transition: 0.5s;
+        width:100%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    :hover>.tax-price-info{
+        font-size: 12px;
+    }
+/*end image 1*/
+
+
+/*IMAGE ===========>2<====================*/
+.image-box-2{
+    width: 100%;
+    /* border:2px solid black; */
+    margin:0;
+    margin-bottom: 20px;
+    position:relative;
+    /* min-height:100vh; */
+    overflow:hidden;
+}
+
+.image-box-2>img{
+    width:100%;
+    height:auto;
+    transition:all 0.5s;
+}
+.image-box-2>.content-2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* background-color: lightblue; */
+    position: absolute;
+    top:10px;
+    left:6%;
+    color:#fff;
+    /* position:relative; */
+    line-height:30px;
+}
+.image-box-2>.content-2>h2{
+    font-size: xx-large;
+    /* color:black; */
+}
+.image-box-2>.content-2>p{
+    font-size: xx-large;
+    line-height:45px;
+}
+.tax-price-info-2{
+        background: linear-gradient(135deg, #12084d 1%, #3567b7 41%, #3a9ecf 99%, 
+        #207cca 99%);
+        color:white;
+        position: absolute;
+        bottom:35px;
+        left:0px;
+        box-sizing: border-box;
+        font-size: 12px;
+        padding:10px 15px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        width:100%;
+        transition:0.5s;
+}
+:hover>.animation-image-2{
+    scale:1.2;
+}
+
+:hover>.tax-price-info-2{
+    font-size: 25px;
+}
+
+.button-2>a{
+    color:transparent;
+    background:transparent;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding:7px 20px;
+    text-decoration:none;
+    display: block;
+    font-size: 11px;
+    margin-top:10px;
+}
+
+.button-2{
+    position:absolute;
+    bottom:13%;
+    right:3%;
+}
+:hover>.button-2>a{
+    background-color: #23527C;
+    color:white;
+    border:1px solid white;
+}
+:hover>.button-2>a:nth-child(2){
+    background-color: #69B342;
+}
+
+
+/* END IMAGE ===========>2<====================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
     .menu-bar{
-        background-color:rgba(0, 85, 122,0.7);
+        z-index: 5;
+        background-color:rgba(0, 85, 122,0.5);
         border-bottom: 2px groove #00557a;
         /* box-shadow: 2px 2px 50px rgb(0, 85, 122); */
         width: 100%;
@@ -272,7 +657,7 @@ h5{
 
 
     .main-container{
-        width: 100%;
+        width: 100% !important;
         margin: 0 auto;
     }
 
@@ -280,7 +665,7 @@ h5{
         object-position: top left;
         height: 200px;
         object-fit: cover;
-        width: 100%;
+        width: 100% !important;
     }
     .gif-images{
         flex-direction: column;
@@ -294,8 +679,9 @@ h5{
     .last-flight-deals>h1{
         font-size:25px;
         text-align:left;
-        padding: 0;
-        padding-left: 10px;
+        padding: 30px 0;
+        /* font-weight: 5000px; */
+        padding-left: 0px;
         margin: 0;
     }
     .animated-images{
@@ -326,7 +712,7 @@ h5{
         flex-direction: column;
     }
     .footer-col1,.footer-col2,.footer-col3,.footer-col4{
-        text-align: left;
+        text-align: center;
         padding: 20px;
     }
 }
